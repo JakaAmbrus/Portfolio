@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 10px;
+}
+#landing-page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #1B1B1B
+}
+#landing-page-content-container{
+    width: 50em;
+    height: 50em;
+    border:1px solid white;
+    margin: auto;
+}
+#mouse-scroll-icon-container{
+    position: absolute;
+    height: 10em;
+    width: 10em;
+    border:1px solid white;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+#scroll-mouse-container{
+    height: 4.8em;
+    width: 2.5em;
+    border:2px solid white;
+    margin: auto;
+    border-radius: 5em;
+}
+#mouse-wheel{
+    
+    color: blue;
+    font-size: 7em;
+}
