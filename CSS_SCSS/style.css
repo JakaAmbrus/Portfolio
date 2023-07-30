@@ -1,0 +1,23 @@
+:root{
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 10px;
+}
+#landing-page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #1B1B1B
+}
+#landing-page-content-container{
+    width: 50em;
+    height: 50em;
+    /* border:1px solid white; */
+    margin: auto;
+}
