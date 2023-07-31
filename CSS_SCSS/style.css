@@ -1,23 +1,108 @@
-:root{
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+body {
+  font-size: 10px;
+  color: #FFFFFF;
+  font-family: Poppins, sans-serif;
 }
-body{
-    font-size: 10px;
+
+#landing-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1B1B1B;
 }
-#landing-page{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    background-color: #1B1B1B
+
+#landing-page-container {
+  height: 100%;
+  width: 100%;
+  max-width: 3500px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-#landing-page-content-container{
-    width: 50em;
-    height: 50em;
-    /* border:1px solid white; */
-    margin: auto;
+
+#landing-page-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+  height: 50em;
 }
+
+#name {
+  margin-top: 0.5em;
+  font-size: 12em;
+  -webkit-text-stroke: 2px #68A4E9;
+  color: transparent;
+}
+
+#landing-img-container {
+  position: absolute;
+  right: 0;
+  margin-top: auto;
+  width: 50%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+#web-img {
+  height: 100%;
+  width: 100%;
+}
+
+#position-title {
+  margin-top: 0.5em;
+  font-size: 3em;
+  color: silver;
+}
+#position-title span {
+  -webkit-text-stroke: 2px #68A4E9;
+  color: transparent;
+}
+
+#landing-page-navigation {
+  font-size: 1.5em;
+  margin-top: 3em;
+}
+
+a {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-decoration: none;
+  color: silver;
+}
+
+a, b {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+a:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px #68A4E9;
+}
+
+.separator {
+  color: #68A4E9;
+  font-size: 1.3em;
+  margin: 0 1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  line-height: 1;
+  cursor: default;
+}
+
+@media (min-width: 2501px) {
+  #landing-page-content-container {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
