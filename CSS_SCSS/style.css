@@ -38,7 +38,7 @@ body{
 }
 #landing-img-container{
     position: absolute;
-    right: 0;
+    right: 2%;
     margin-top: auto;
     width: 50%;
     aspect-ratio: 1;
