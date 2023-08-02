@@ -110,17 +110,18 @@ a:hover{
     #landing-img-container{
         width: 100vw;
         height: 100vw;
-        top: 35%;
+        top: 27%;
         left: 0.1%;
     }
     #landing-page-content-container{
         width: 100vw;
         justify-content: end;
-        height: 30vh;
+        height: 25vh;
         font-size: 1.2vw;
     }
     #mouse-scroll-icon-container{
         font-size: 10px;
+        bottom: 8vh;
     }
     #landing-page-content-container h1 {
         margin: 0;
@@ -133,18 +134,19 @@ a:hover{
     #landing-img-container{
         width: 100vw;
         height: 100vw;
-        top: 35%;
+        top: 27%;
         left: 0.1%;
     }
     #landing-page-content-container{
         width: 100vw;
         justify-content: end;
-        height: 30vh;
+        height: 25vh;
         font-size: 15px;
         
     }
     #mouse-scroll-icon-container{
         font-size: 30px;
+        bottom: 8vh;
     }
     #landing-page-content-container h1 {
         margin: 0;
