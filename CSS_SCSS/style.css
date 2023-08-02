@@ -52,8 +52,8 @@ body{
     position: absolute;
     right: 2%;
     margin-top: auto;
-    width: 50%;
-    aspect-ratio: 1;
+    width: 50vw;
+    height: 50vw;
     overflow: hidden;
 }
 #web-img{
@@ -105,16 +105,17 @@ a:hover{
     }
     #landing-img-container{
         width: 100vw;
+        height: 100vw;
         bottom: 20%;
         left: 0.1%;
     }
     #landing-page-content-container{
         width: 100vw;
-        font-size: 13px;
+        font-size: 1.2vw;
         margin-top: 20%;
     }
     #mouse-scroll-icon-container{
-        font-size: 20px;
+        font-size: 8px;
     }
   }
   @media (min-height: 2500px) {
@@ -123,6 +124,7 @@ a:hover{
     }
     #landing-img-container{
         width: 100vw;
+        height: 100vw;
         bottom: 20%;
         left: 0.1%;
     }
