@@ -12,7 +12,7 @@ const electronsIDs = [
       const electron = document.getElementById(electronID);
       electron.style.animation = "none";
       setTimeout(() => {
-        electron.style.animation = `${electronID}-animation 0.4s ease-in-out reverse`;
+        electron.style.animation = electronID + '-animation 0.4s ease-in-out reverse';
       }, 1);
     });
   }
