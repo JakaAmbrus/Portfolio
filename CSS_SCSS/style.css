@@ -106,6 +106,7 @@ a:hover{
     #landing-img-container{
         width: 100vw;
         bottom: 20%;
+        left: 0.1%;
     }
     #landing-page-content-container{
         width: 100vw;
@@ -122,8 +123,8 @@ a:hover{
     }
 }
 
-/* @media (min-height: 2900px){
+@media (min-height: 2900px){
     #landing-page-content-container{
         font-size: 16px;
     }
-} */
+}
