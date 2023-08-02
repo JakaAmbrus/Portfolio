@@ -104,3 +104,25 @@ a:hover{
         font-size: 15px;
     }
 }
+@media (min-height: 2500px) {
+    #landing-page-container{
+        flex-direction: column;
+    }
+    #landing-img-container{
+        width: 100vw;
+        bottom: 20%;
+    }
+    #landing-page-content-container{
+        width: 100vw;
+        font-size: 15px;
+        margin-top: 20%;
+    }
+    #mouse-scroll-icon-container{
+        font-size: 30px;
+    }
+}
+@media (min-height: 2900px){
+    #landing-page-content-container{
+        font-size: 16px;
+    }
+}
