@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+html, body{
+    margin: 0;
     font-size: 10px;
     color: #FFFFFF;
     font-family: Poppins,sans-serif;
@@ -22,6 +23,7 @@ body{
     display: flex;
     align-items: center;
     overflow: hidden;
+    margin: 0;
 }
 #landing-page-content-container{
     display: flex;
