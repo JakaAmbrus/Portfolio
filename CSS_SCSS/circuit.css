@@ -1,11 +1,52 @@
 /* animation for the electrons moving, this took way too long and required simple but redundant math to get the percentages right, appreciate the effort */
+#web-icon-white{
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  animation: rotate 2.5s ease forwards;
+}
+#web-icon-wheel{
+  position: absolute;
+  z-index: 6;
+  height: 100%;
+  width: 100%;
+  animation: rotate2 2.5s ease forwards;
+}
+@keyframes rotate2 {
+  20%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }  
+}
+@keyframes rotate {
+  20%{
+    opacity: 0;
+  }
+  99%{
+    opacity: 0.56
+  }  
+}
+#electron-concieler{
+    z-index: 3;
+    position: absolute;
+    height: 2%;
+    width: 2%;
+    background: #1B1B1B;
+    
+}
 .electrons{
+  z-index: 1;
     position: absolute;
     height: 0.8%;
     width: 0.8%;
     border-radius: 50%;
     background: white;
-}
+   
+  }
 #electron-1{
 
   /* 8.4cm length */
@@ -331,8 +372,8 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
 }
 #electron-13{
   animation: electron-13-animation 1.5s ease-out forwards;
-  bottom: 6%;
-      right: 20.5%;
+  /* bottom: 6%;
+      right: 20.5%; */
   /* 0
   bottom: 6%;
   right: 20.5%; */
@@ -363,11 +404,34 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
 
 }
 
-
+#electron-14{
+ /* 10.6cm length, 120% of the initial */
+animation: electron-14-animation 1.3s ease-in-out 
+/* 0
+  right: 12.3%;
+  top: 33.6%; */
+/* 1
+  right: 10%;
+  top: 36%; */
+/* 2
+  right: 10%;
+  top: 42%; */
+/* 3
+  right: 11.8%;
+  top: 43.6%; */
+/* 4
+  right: 21.6%;
+  top: 43.7%; */
+/* 5
+  right: 24.4%;
+  top: 46.3%; */
+/* 6
+  right: 34.3%;
+  top: 46.3%; */
+}
 
   @keyframes electron-1-animation {
     5%{
-        
         right:43.1%;
         top: 7.8%;   
     }
@@ -391,8 +455,7 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
   }
 
   @keyframes electron-2-animation {
-    0%{
-      
+    1%{
       right: 16.9%;
       top: 4.4%;
     }
@@ -440,8 +503,7 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
 
   }
   @keyframes electron-3-animation{
-    0%{
-   
+    1%{
       right: 10.8%;
       top: 16.3%;
     }
@@ -476,7 +538,6 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
   }
   @keyframes electron-4-animation {
     2%{
-    
       right: 7.2%;
       bottom: 47.7%;
     }
@@ -499,7 +560,6 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
   }
   @keyframes electron-5-animation {
     2%{
-   
       left: 47.8%;
       bottom: 7%;
     }
@@ -522,7 +582,6 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
   }
   @keyframes electron-6-animation {
     2%{
-  
       left: 33.15%;
       bottom: 26.4%;
     }
@@ -542,7 +601,6 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
 
   @keyframes electron-7-animation {
     2%{
-  
       left: 10.5%;
       bottom: 15.2%;
     }
@@ -578,7 +636,6 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
 
   @keyframes electron-8-animation{
     2%{
- 
       left: 9.85%;
       bottom: 34%;
     }
@@ -605,7 +662,6 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
   }
   @keyframes electron-9-animation {
     2%{
-  
       left: 22.4%;
       top: 44.42%;
     }
@@ -620,11 +676,10 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
     99%{
       left: 34.4%;
       top: 46.35%;
-    }
+   }
   }
   @keyframes electron-10-animation {
-    10%{
-
+    1%{
       left: 26.4%;
       top: 32%;
     }
@@ -636,7 +691,6 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
 
   @keyframes electron-11-animation{
     2%{
-   
       left: 14.8%;
       top: 10%;
     }
@@ -646,7 +700,7 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
     }
     46%{
       left: 32%;
-  top: 18.2%;
+      top: 18.2%;
     }
     61%{
       left: 39.2%;
@@ -684,11 +738,11 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
     }
     30%{
       right: 11.5%;
-  bottom: 22.1%; 
+     bottom: 22.1%; 
     }
     42%{
       right: 16.9%;
-  bottom: 22.1%;
+      bottom: 22.1%;
     }
     71%{
       right: 26.7%;
@@ -696,7 +750,7 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
     }
     75%{
       right: 29.7%;
-  bottom: 31.7%;
+      bottom: 31.7%;
     }
     81.5%{
       right: 30.8%;
@@ -712,7 +766,7 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
     }
   }
   @keyframes electron-13-animation{
-    5%{
+    2%{
       bottom: 6%;
       right: 20.5%;
     }
@@ -726,7 +780,7 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
     }
     60%{
       bottom: 19.5%;
-  right: 40.7%;
+      right: 40.7%;
     }
     70.4%{
       bottom: 24%;
@@ -741,30 +795,54 @@ animation: electron-12-animation 1.6s ease-in-out forwards;
       right: 44.2%;
     }
   }
+  @keyframes electron-14-animation{
+    2%{
+      right: 12.3%;
+      top: 33.6%;
+    }
+    11%{
+      right: 10%;
+      top: 36%;
+    }
+    30%{
+      right: 10%;
+      top: 42%; 
+    }
+    35%{
+      right: 11.8%;
+      top: 43.6%;
+    }
+    63%{
+      right: 21.6%;
+      top: 43.7%;
+    }
+    72%{
+      right: 24.4%;
+      top: 46.3%; 
+    }
+    99%{
+      right: 34.3%;
+      top: 46.3%;
+    }
+  }
   /* 0
-  bottom: 6%;
-  right: 20.5%; */
-
-  /* 1
-  bottom: 18%;
-  right: 32.5%; */
-
-  /* 2
-  bottom: 18%;
-  right: 39.2%; */
-
-  /* 3
-  bottom: 19.5%;
-  right: 40.7%; */
-
-  /* 4
-  bottom: 24%;
-  right: 40.7%; */
-
-  /* 5
-  bottom: 27.5%;
-  right: 44.2%; */
-
-  /* 6
-  bottom: 34.3%;
-  right: 44.2%; */
+  right: 12.3%;
+  top: 33.6%; */
+/* 1
+  right: 10%;
+  top: 36%; */
+/* 2
+  right: 10%;
+  top: 42%; */
+/* 3
+  right: 11.8%;
+  top: 43.6%; */
+/* 4
+  right: 21.6%;
+  top: 43.7%; */
+/* 5
+  right: 24.4%;
+  top: 46.3%; */
+/* 6
+  right: 34.3%;
+  top: 46.3%; */
