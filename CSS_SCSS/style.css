@@ -120,8 +120,9 @@ a:hover{
         font-size: 1.2vw;
     }
     #mouse-scroll-icon-container{
-        font-size: 10px;
-        bottom: 8vh;
+        /* font-size: 10px;
+        bottom: 8vh; */
+        display: none;
     }
     #landing-page-content-container h1 {
         margin: 0;
@@ -145,8 +146,9 @@ a:hover{
         
     }
     #mouse-scroll-icon-container{
-        font-size: 30px;
-        bottom: 8vh;
+        /* font-size: 30px;
+        bottom: 8vh; */
+        display: none;
     }
     #landing-page-content-container h1 {
         margin: 0;
