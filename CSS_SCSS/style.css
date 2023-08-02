@@ -121,6 +121,9 @@ a:hover{
     #mouse-scroll-icon-container{
         font-size: 10px;
     }
+    #landing-page-content-container h1 {
+        margin: 0;
+    }
   }
   @media (min-height: 2500px) {
     #landing-page-container{
@@ -139,6 +142,9 @@ a:hover{
     }
     #mouse-scroll-icon-container{
         font-size: 30px;
+    }
+    #landing-page-content-container h1 {
+        margin: 0;
     }
 }
 
