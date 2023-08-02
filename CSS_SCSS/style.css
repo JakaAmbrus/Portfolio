@@ -99,12 +99,7 @@ a:hover{
     line-height: 1;
     cursor: default;
   }
-  @media (min-width: 2501px) {
-    #landing-page-content-container {
-        font-size: 15px;
-    }
-}
-@media (min-height: 2500px) {
+  @media (min-height: 2500px) {
     #landing-page-container{
         flex-direction: column;
     }
@@ -121,8 +116,14 @@ a:hover{
         font-size: 30px;
     }
 }
-@media (min-height: 2900px){
+  @media (min-width: 2501px) {
+    #landing-page-content-container {
+        font-size: 15px;
+    }
+}
+
+/* @media (min-height: 2900px){
     #landing-page-content-container{
         font-size: 16px;
     }
-}
+} */
