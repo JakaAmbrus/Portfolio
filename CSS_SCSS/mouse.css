@@ -155,5 +155,37 @@
     }
   
 }
+@media (max-width: 800px){
+    #mouse-scroll-icon-container{
+        font-size: 7px;
+        top: 90vh;
+    }
+}
+@media (max-width: 1100px){
+    #mouse-scroll-icon-container{
+        font-size: 7px;
+        top: 80vh;
+    }
+}
+
+@media (max-width: 1100px) and (min-height: 2000px) {
+    #mouse-scroll-icon-container{
+        font-size: 25px;
+        top: 80vh;
+    }
+}
+@media (min-height: 2500px){
+    #mouse-scroll-icon-container{
+        font-size: 30px;
+        top: 80vh;
+    }
+}
+@media (max-width: 800px){
+    #mouse-scroll-icon-container{
+        font-size: 7px;
+        top: 90vh;
+    }
+}
+
 
 

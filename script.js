@@ -1,5 +1,4 @@
-
-
+//electron reverse animation
 const electronsIDs = [
     "electron-1", "electron-2", "electron-3", "electron-4", "electron-5", "electron-6",
     "electron-7", "electron-8", "electron-9", "electron-10", "electron-11", "electron-12",
@@ -19,11 +18,11 @@ const electronsIDs = [
     });
   }
 
- 
-  function scrollToIntroduction() {
-    const introductionPage = document.querySelector("#introduction-page-container");
+ //scrolltrigger animations
+  function scrollToIntro() {
+    const introPage = document.querySelector("#introduction-page-container");
     gsap.to(window, {
-      scrollTo: { y: introductionPage.offsetTop, offsetY: window.innerHeight - introductionPage.offsetHeight },
+      scrollTo: { y: introPage.offsetTop, offsetY: window.innerHeight - introPage.offsetHeight },
       duration: 0.5,
       ease: "power1.inOut",
     });
@@ -32,7 +31,7 @@ const electronsIDs = [
   let isFirstScroll = true;
   window.addEventListener("scroll", () => {
     if (isFirstScroll) {
-      scrollToIntroduction();
+      scrollToIntro();
       isFirstScroll = false;
     }
   });
