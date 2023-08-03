@@ -1,19 +1,49 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/fonts/Gilroy-ExtraBold.ttf') format('truetype'); 
+  }
+:root {
+    --mainColor: rgb(227, 224, 224);
+    --mainColorDimmed: rgba(227, 224, 224, 0.5);
+    --mainColor80: rgba(227, 224, 224, 0.888);
+    --theme-color: #68a4e9;
+    --dark-theme-color: #1B1B1B;
+    --light-theme-color: hsl(212, 75%, 98%);
+  }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #252525;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html{
+    scroll-behavior: smooth;
 }
 html, body{
     margin: 0;
     font-size: 10px;
-    color: #FFFFFF;
     font-family: Poppins,sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
+    color: hsl(212, 75%, 98%);
+    
+}
+.introduction-triggered {
+    scroll-snap-align: start;
+}
+#landing-and-intro-page{
+    display: flex;
+    width: 200vw;
 }
 #landing-page{
     height: 100vh;
     width: 100vw;
-    background-color: #1B1B1B;
+    background-color: var(--dark-theme-color);
+    scroll-snap-type: y mandatory;
+    overflow: hidden;
+
+    
 }
 #landing-page-container{
     position: relative;
@@ -32,7 +62,6 @@ html, body{
     align-items: center;
     width: 50%;
     height: 50em;
-    animation: zap 0.4s ease 2.7s forwards;
 }
 
 @keyframes zap {
@@ -49,8 +78,10 @@ html, body{
 #name{
     margin-top: 0.5em;
     font-size: 12em;
-    -webkit-text-stroke: 2px #68A4E9;
+    -webkit-text-stroke: 2px var(--theme-color);
     color: transparent;
+    animation: zap 0.4s ease 2.7s forwards;
+    text-align: center;
 }
 #landing-img-container{
     position: absolute;
@@ -68,10 +99,10 @@ html, body{
 #position-title{
     margin-top: 0.5em;
     font-size: 3em;
-    color: silver;
+    color: hsl(212, 75%, 90%);
 }
 #position-title > span{
-    -webkit-text-stroke: 2px #68A4E9;
+    -webkit-text-stroke: 2px var(--theme-color);
     color: transparent;
 }
 #landing-page-navigation{
@@ -79,9 +110,9 @@ html, body{
     margin-top: 3em ;
 }
 a{
-    user-select: none;
+    /* user-select: none; */
     text-decoration: none;
-    color: silver;
+    color: hsl(212, 75%, 90%);
 }
 a, b {
     font-family: Poppins,sans-serif;
@@ -90,10 +121,10 @@ a, b {
 }
 a:hover{
     color: transparent;
-    -webkit-text-stroke: 1px #68A4E9;
+    -webkit-text-stroke: 1px var(--theme-color);
 }
 .separator {
-    color: #68A4E9;
+    color: var(--theme-color);
     font-size: 1.3em;
     margin: 0 1em; 
     display: inline-flex;

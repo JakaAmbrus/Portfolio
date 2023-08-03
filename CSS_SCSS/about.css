@@ -1,0 +1,26 @@
+#introduction-page-container{
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--theme-color);
+    font-family: 'CustomFont';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#introduction-text-content-container{
+    font-size: 5.2em;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+}
+#introduction-img-container{
+    border: 1px solid black;
+    height: 50%;
+    width: 65%;
+    display: none;
+}
+.white-fonts{
+    color: hsl(212, 75%, 99%);
+}

@@ -1,11 +1,4 @@
-:root {
-    --mainColor: rgb(227, 224, 224);
-    --mainColorDimmed: rgba(227, 224, 224, 0.5);
-    --mainColor80: rgba(227, 224, 224, 0.888);
-    --theme-color: #68a4e9;
-  }
-  
-  #mouse-scroll-icon-container {
+   #mouse-scroll-icon-container {
     position: absolute;
     display: flex;
     flex-direction: column;
