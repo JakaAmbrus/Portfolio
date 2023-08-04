@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/fonts/Gilroy-ExtraBold.ttf') format('truetype'); 
+  }
+:root {
+    --mainColor: rgb(227, 224, 224);
+    --mainColorDimmed: rgba(227, 224, 224, 0.5);
+    --mainColor80: rgba(227, 224, 224, 0.888);
+    --theme-color: #68a4e9;
+    --dark-theme-color: #1B1B1B;
+    --light-theme-color: hsl(212, 75%, 98%);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #252525;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html{
+    scroll-behavior: smooth;
+}
+html, body{
+    margin: 0;
+    font-size: 10px;
+    font-family: Poppins,sans-serif;
+    overflow-x: hidden;
+    
+}
+/* WebKit-based browsers (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(236, 236, 241);
+    border-radius: 5px; /* Dark color for the thumb */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #222; /* Dark color for the track */
+  }
+  
+  /* Firefox */
+  ::-moz-scrollbar {
+    width: 10px;
+  }
+  
+  ::-moz-scrollbar-thumb {
+    background-color: rgb(236, 236, 241);
+    border-radius: 5px;
+  }
+  
+  ::-moz-scrollbar-track {
+    background-color: #222;
+  }
+  
+  /* Edge and Internet Explorer */
+  ::-ms-scrollbar {
+    width: 10px;
+  }
+  
+  ::-ms-scrollbar-thumb {
+    background-color: rgb(236, 236, 241);
+    border-radius: 5px;
+  }
+  
+  ::-ms-scrollbar-track {
+    background-color: #222;
+  }
+@media (max-width: 1100px) {
+    #landing-page-container{
+        flex-direction: column;
+    }
+    #landing-img-container{
+        width: 100vw;
+        height: 100vw;
+        top: 28%;
+        left: 0.1%;
+    }
+    #landing-page-content-container{
+        width: 100vw;
+        justify-content: end;
+        height: 25vh;
+        font-size: 1.2vw;
+    }
+
+    #landing-page-content-container h1 {
+        margin: 0;
+    }
+    #introduction-text-content-container{
+        width: 80%;
+        font-size: 6.5vw;
+    }
+  }
+  @media (min-height: 2500px) {
+    #landing-page-container{
+        flex-direction: column;
+    }
+    #landing-img-container{
+        width: 100vw;
+        height: 100vw;
+        top: 28%;
+        left: 0.1%;
+    }
+    #landing-page-content-container{
+        width: 100vw;
+        justify-content: end;
+        height: 25vh;
+        font-size: 15px;
+        
+    }
+    #landing-page-content-container h1 {
+        margin: 0;
+    }
+    #introduction-text-content-container{
+        width: 80%;
+        font-size: 8vw;
+    }
+}
+
+  @media (min-width: 2501px) {
+    #landing-page-content-container {
+        font-size: 15px;
+    }
+}
+@media (min-width: 3500px) {
+    #landing-img-container{
+        width: 100vh;
+        height: 100vh;
+    }
+}

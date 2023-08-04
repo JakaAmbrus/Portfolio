@@ -35,3 +35,17 @@ const electronsIDs = [
       isFirstScroll = false;
     }
   });
+
+
+  //hiding the content after start
+  const introPage = document.getElementById('introduction-page');
+  const mouseContainer = document.getElementById('mouse-scroll-icon-container');
+  const aboutPage = document.getElementById('about-me');
+
+  window.addEventListener('load', function () {
+    this.setTimeout(() => {
+      introPage.style.display = 'flex'
+      mouseContainer.style.display = 'flex'
+      aboutPage.style.display = 'flex'
+    }, 2500);
+});
