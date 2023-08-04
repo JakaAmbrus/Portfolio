@@ -1,6 +1,6 @@
    #mouse-scroll-icon-container {
     position: absolute;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     height: 10em;

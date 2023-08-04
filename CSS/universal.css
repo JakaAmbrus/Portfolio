@@ -8,7 +8,7 @@
     --mainColor80: rgba(227, 224, 224, 0.888);
     --theme-color: #68a4e9;
     --dark-theme-color: #1B1B1B;
-    --light-theme-color: hsl(212, 75%, 98%);
+    --light-theme-color: hsl(212, 75%, 96%);
   }
 *{
     margin: 0;
@@ -24,9 +24,12 @@ html{
 html, body{
     margin: 0;
     font-size: 10px;
-    font-family: Poppins,sans-serif;
-    overflow-x: hidden;
-    
+    font-family: 'CustomFont';
+    overflow-x: hidden;    
+}
+h1, p{
+  margin: 0;
+  padding: 0;
 }
 /* WebKit-based browsers (Chrome, Safari, Opera) */
 ::-webkit-scrollbar {

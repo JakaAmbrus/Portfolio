@@ -1,0 +1,12 @@
+#technologies{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 25vh;
+    width: 100%;
+    background: var(--theme-color);
+}
+#tech-container{
+    height: 100%;
+    width: 100%;
+}

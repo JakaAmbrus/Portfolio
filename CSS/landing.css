@@ -5,6 +5,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    font-family: 'CustomFont';
     
 }
 #landing-page-container{
