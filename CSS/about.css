@@ -100,6 +100,9 @@
     #about-img-container{
       border: 1vw solid var(--theme-color);
   }
+  #about-me{
+    background-image: url('/img/svg-wave-mobile.svg');
+}
 }
 @media (min-height: 2500px) {
     #about-content-container{
@@ -118,6 +121,9 @@
         font-size: 1.4vw;
         width: 90%;
     }
+    #about-me{
+      background-image: url('/img/svg-wave-mobile.svg');
+  }
     
 }
   @media (min-width: 2501px) {
