@@ -88,14 +88,16 @@
         flex-direction: column-reverse;
         align-items: center;
         height: 60%;
+        width: 90%;
     }
     #about-right{
-        width: 58vw;
+        width: 65vw;
+        margin-bottom: 10em;
     }
     #about-left{
         margin-top: 1em;
-        font-size: 1.4vw;
-        width: 90%;
+        font-size: 1.5vw;
+        width: 100%;
     }
     #about-img-container{
       border: 1vw solid var(--theme-color);
@@ -112,14 +114,15 @@
         flex-direction: column-reverse;
         align-items: center;
         height: 60%;
+        width: 90%;
     }
     #about-right{
         width: 60vw;
     }
     #about-left{
-        margin-top: 1em;
-        font-size: 1.4vw;
-        width: 90%;
+        margin-top: 2em;
+        font-size: 1.6vw;
+        width: 100%;
     }
     #about-me{
       background-image: url('/img/svg-wave-mobile.svg');
