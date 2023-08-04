@@ -97,6 +97,9 @@
         font-size: 1.4vw;
         width: 90%;
     }
+    #about-img-container{
+      border: 1vw solid var(--theme-color);
+  }
 }
 @media (min-height: 2500px) {
     #about-content-container{
@@ -115,6 +118,7 @@
         font-size: 1.4vw;
         width: 90%;
     }
+    
 }
   @media (min-width: 2501px) {
     #about-left{
