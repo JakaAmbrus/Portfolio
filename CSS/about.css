@@ -3,7 +3,7 @@
     justify-content: center;
     height: 110vh;
     width: 100vw;
-    background-image: url('/img/svg-wave.svg');
+    background-image: url('../img/svg-wave.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -103,21 +103,26 @@
       border: 1vw solid var(--theme-color);
   }
   #about-me{
-    background-image: url('/img/svg-wave-mobile.svg');
+    background-image: url('../img/svg-wave-mobile.svg');
 }
 }
 @media (min-height: 2500px) {
     #about-content-container{
         align-items: end;
+        height: 90vh;
+    }
+    .white-space{
+      height: 15vh;
     }
     #about-content{
         flex-direction: column-reverse;
         align-items: center;
-        height: 60%;
+        height: 100%;
         width: 90%;
+        border: 1px solid black;
     }
     #about-right{
-        width: 60vw;
+        width: 80vw;
     }
     #about-left{
         margin-top: 2em;
@@ -125,7 +130,7 @@
         width: 100%;
     }
     #about-me{
-      background-image: url('/img/svg-wave-mobile.svg');
+      background-image: url('../img/svg-wave-mobile.svg');
   }
     
 }
