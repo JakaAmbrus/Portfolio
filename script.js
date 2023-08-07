@@ -63,3 +63,78 @@ let clicked = false;
       aboutPage.style.display = 'flex'
     }, 2500);
 });
+
+
+
+
+
+
+
+
+
+
+const techContainer = document.getElementById('tech-container');
+let isDragging = false;
+let startX = 0;
+let scrollX = 0;
+const maxScroll = 0; // Define the maximum scroll value
+
+techContainer.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.clientX - scrollX;
+    techContainer.style.transition = 'none'; // Disable transition during dragging
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+
+    const mouseX = e.clientX;
+    const distanceX = mouseX - startX;
+
+    // Only allow scrolling to the left
+    scrollX = Math.min(distanceX, maxScroll);
+    techContainer.style.transform = `translateX(${scrollX}px)`;
+});
+
+document.addEventListener('mouseup', () => {
+    if (!isDragging) return;
+
+    isDragging = false;
+    techContainer.style.transition = 'transform 0.3s ease-in-out'; // Re-enable transition
+});
+
+document.addEventListener('mouseleave', () => {
+    if (!isDragging) return;
+
+    isDragging = false;
+    techContainer.style.transition = 'transform 0.3s ease-in-out'; // Re-enable transition
+});
+
+techContainer.addEventListener('touchstart', handleDragStart, { passive: true });
+document.addEventListener('touchmove', handleDragMove, { passive: false });
+document.addEventListener('touchend', handleDragEnd);
+document.addEventListener('touchcancel', handleDragEnd);
+
+function handleDragStart(e) {
+    isDragging = true;
+    startX = e.touches[0].clientX - scrollX;
+    techContainer.style.transition = 'none'; // Disable transition during dragging
+}
+
+function handleDragMove(e) {
+    if (!isDragging) return;
+
+    const mouseX = e.touches[0].clientX;
+    const distanceX = mouseX - startX;
+
+    // Only allow scrolling to the left
+    scrollX = Math.min(distanceX, maxScroll);
+    techContainer.style.transform = `translateX(${scrollX}px)`;
+}
+
+function handleDragEnd() {
+    if (!isDragging) return;
+
+    isDragging = false;
+    techContainer.style.transition = 'transform 0.3s ease-in-out'; // Re-enable transition
+}
