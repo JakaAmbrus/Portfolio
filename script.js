@@ -41,8 +41,6 @@ const electronsIDs = [
      isFirstScroll = false;
    }
  });
-
- 
 //navigation scrolling
 let clicked = false;
  document.querySelector('#about-nav').addEventListener('click', function (event) {
@@ -56,19 +54,8 @@ let clicked = false;
 
 });
 
-//technologies container animation
-const techContainer = document.getElementById('tech-container');
-window.addEventListener('DOMContentLoaded', () => {
-  techContainer.classList.add('active');
-});
-
-techContainer.addEventListener('click', () => {
-    techContainer.classList.remove('active');
-});
-techContainer.addEventListener('touchstart', () => {
-  techContainer.classList.remove('active');
-});
 //technologies scrolling
+const techContainer = document.getElementById('tech-container');
 let isDragging = false;
 let startX = 0;
 let scrollX = 0;
@@ -133,3 +120,11 @@ function handleDragEnd() {
     isDragging = false;
     techContainer.style.transition = 'transform 0.3s ease-in-out';
 }
+//technologies container animation
+window.addEventListener('DOMContentLoaded', () => {
+  techContainer.classList.add('active');
+});
+
+techContainer.addEventListener('click', () => {
+    techContainer.classList.remove('active');
+});
