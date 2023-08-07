@@ -23,7 +23,7 @@
     top: 0;
 }
 .active {
-    animation: moveItems 60s linear infinite;
+    animation: moveItems 180s linear infinite;
 }
 @keyframes moveItems {
     0% {

@@ -94,7 +94,7 @@
     }
     #about-right{
         width: 65vw;
-        margin-bottom: 10em;
+        margin-top: 5%;
     }
     #about-left{
         margin-top: 1em;
@@ -125,6 +125,7 @@
     }
     #about-right{
         width: 80vw;
+        margin-top: 5%;
     }
     #about-left{
         margin-top: 2em;
