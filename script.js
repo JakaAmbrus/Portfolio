@@ -46,7 +46,7 @@ let clicked = false;
  document.querySelector('#about-nav').addEventListener('click', function (event) {
   event.preventDefault();
   clicked = true;
-  const aboutSection = document.querySelector('#about-me');
+  const aboutSection = document.querySelector('#about-content-container');
   
   aboutSection.scrollIntoView({
       behavior: 'smooth'
@@ -93,6 +93,7 @@ document.addEventListener('mouseleave', () => {
 
 
 //? for the mobile devices
+const maxScrollMobile = 0;
 techContainer.addEventListener('touchstart', handleDragStart, { passive: true });
 document.addEventListener('touchmove', handleDragMove, { passive: false });
 document.addEventListener('touchend', handleDragEnd);
@@ -101,7 +102,7 @@ document.addEventListener('touchcancel', handleDragEnd);
 function handleDragStart(e) {
     isDragging = true;
     startX = e.touches[0].clientX - scrollX;
-    techContainer.style.transition = 'none'; 
+    techContainer.style.transition = 'none';
 }
 
 function handleDragMove(e) {
@@ -110,7 +111,7 @@ function handleDragMove(e) {
     const mouseX = e.touches[0].clientX;
     const distanceX = mouseX - startX;
 
-    scrollX = Math.min(distanceX, maxScroll);
+    scrollX = Math.min(distanceX, maxScrollMobile);
     techContainer.style.transform = `translateX(${scrollX}px)`;
 }
 

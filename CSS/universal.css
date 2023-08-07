@@ -157,6 +157,12 @@ ul, li {
         width: 80%;
         font-size: 8vw;
     }
+    #position-title{
+      font-size: 4em;
+    }
+    #landing-page-navigation{
+      font-size: 2em;
+    }
 }
 
   @media (min-width: 2501px) {
