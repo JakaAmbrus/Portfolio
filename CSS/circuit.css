@@ -5,14 +5,14 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  animation: rotate 2.5s ease forwards;
+  animation: rotate 2.5s ease 0.5s forwards;
 }
 #web-icon-wheel{
   position: absolute;
   z-index: 6;
   height: 100%;
   width: 100%;
-  animation: rotate2 2.5s ease forwards;
+  animation: rotate2 2.5s ease 0.5s forwards;
 }
 #electron-concieler{
     z-index: 3;
@@ -31,60 +31,60 @@
   }
 #electron-1{
   /* 8.4cm length */
-    animation: electron-1-animation 1s ease-out forwards;
+    animation: electron-1-animation 1s ease-out 0.5s forwards;
 }
 #electron-2{
   /* 13.3cm length, 150% of the initial */
-    animation: electron-2-animation 1.5s ease-out forwards;
+    animation: electron-2-animation 1.5s ease-out 0.5s forwards;
 }
 #electron-3{
   /* 12.3cm length, 145% of the initial */
-  animation: electron-3-animation 1.4s ease-out forwards;
+  animation: electron-3-animation 1.4s ease-out 0.5s forwards;
 }
 #electron-4{
    /* 8.6cm length, 110% of the initial */
-animation: electron-4-animation 1.1s ease-out forwards;
+animation: electron-4-animation 1.1s ease-out 0.5s forwards;
 }
 #electron-5{
    /* 8.6cm length, 110% of the initial */
-   animation: electron-5-animation 1.2s ease-in-out forwards;
+   animation: electron-5-animation 1.2s ease-in-out 0.5s forwards;
 }
 #electron-6{
-  animation: electron-6-animation 0.5s ease-in-out forwards;
+  animation: electron-6-animation 0.5s ease-in-out 0.5s forwards;
 }
 #electron-7{
 /* 11.5cm length, 140% of the initial */
-animation: electron-7-animation 1.4s ease-in-out forwards;
+animation: electron-7-animation 1.4s ease-in-out 0.5s forwards;
 }
 #electron-8{
 /* 9.3cm length, 115% of the initial */
-animation: electron-8-animation 1.15s ease-out forwards;
+animation: electron-8-animation 1.15s ease-out 0.5s forwards;
 }
 
 #electron-9{
    /* 4.1cm length, 60% of the initial */
-   animation: electron-9-animation 0.65s ease-out forwards;
+   animation: electron-9-animation 0.65s ease-out 0.5s forwards;
 }
 
 #electron-10{
    /* 3.5cm length, 45% of the initial */
-   animation: electron-10-animation 0.5s ease-out forwards;
+   animation: electron-10-animation 0.5s ease-out 0.5s forwards;
 }
 #electron-11{
 /* 14cm length, 170% of the initial */
-animation: electron-11-animation 1.7s ease-out forwards;
+animation: electron-11-animation 1.7s ease-out 0.5s forwards;
 }
 #electron-12{
   /* 13.4cm length, 150% of the initial */
-animation: electron-12-animation 1.6s ease-in-out forwards;
+animation: electron-12-animation 1.6s ease-in-out 0.5s forwards;
 }
 #electron-13{
-  animation: electron-13-animation 1.5s ease-out forwards;
+  animation: electron-13-animation 1.5s ease-out 0.5s forwards;
 }
 
 #electron-14{
  /* 10.6cm length, 120% of the initial */
-animation: electron-14-animation 1.3s ease-in-out 
+animation: electron-14-animation 1.3s ease-in-out 0.5s forwards;
 }
 @keyframes rotate2 {
   20%{

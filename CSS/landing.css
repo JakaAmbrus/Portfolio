@@ -24,7 +24,7 @@
     align-items: center;
     width: 50%;
     height: 50em;
-    animation: zap 0.4s ease 2.7s forwards;
+    animation: zap 0.4s ease 3.2s forwards;
 }
 
 @keyframes zap {

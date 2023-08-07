@@ -23,7 +23,7 @@ const electronsIDs = [
   }
 
  //scrolltrigger animations
- const scrollThreshold = 150; // Adjust this value as needed
+ const scrollThreshold = 150;
 
  function scrollToIntro() {
    const introPage = document.querySelector("#introduction-page-container");
@@ -41,52 +41,30 @@ const electronsIDs = [
      isFirstScroll = false;
    }
  });
-
+//navigation scrolling
 let clicked = false;
  document.querySelector('#about-nav').addEventListener('click', function (event) {
   event.preventDefault();
   clicked = true;
   const aboutSection = document.querySelector('#about-me');
   
-  // Scroll to the section smoothly
   aboutSection.scrollIntoView({
       behavior: 'smooth'
   });
 
 });
 
-  //hiding the content after start
-  const introPage = document.getElementById('introduction-page');
-  const mouseContainer = document.getElementById('mouse-scroll-icon-container');
-  const aboutPage = document.getElementById('about-me');
-
-  window.addEventListener('load', function () {
-    this.setTimeout(() => {
-      introPage.style.display = 'flex'
-      mouseContainer.style.display = 'flex'
-      aboutPage.style.display = 'flex'
-    }, 2500);
-});
-
-
-
-
-
-
-
-
-
-
+//technologies scrolling
 const techContainer = document.getElementById('tech-container');
 let isDragging = false;
 let startX = 0;
 let scrollX = 0;
-const maxScroll = 0; // Define the maximum scroll value
+const maxScroll = -5060;
 
 techContainer.addEventListener('mousedown', (e) => {
     isDragging = true;
     startX = e.clientX - scrollX;
-    techContainer.style.transition = 'none'; // Disable transition during dragging
+    techContainer.style.transition = 'none';
 });
 
 document.addEventListener('mousemove', (e) => {
@@ -95,8 +73,7 @@ document.addEventListener('mousemove', (e) => {
     const mouseX = e.clientX;
     const distanceX = mouseX - startX;
 
-    // Only allow scrolling to the left
-    scrollX = Math.min(distanceX, maxScroll);
+    scrollX = Math.min(Math.max(distanceX, maxScroll), 0);
     techContainer.style.transform = `translateX(${scrollX}px)`;
 });
 
@@ -104,16 +81,18 @@ document.addEventListener('mouseup', () => {
     if (!isDragging) return;
 
     isDragging = false;
-    techContainer.style.transition = 'transform 0.3s ease-in-out'; // Re-enable transition
+    techContainer.style.transition = 'transform 0.3s ease-in-out';
 });
 
 document.addEventListener('mouseleave', () => {
     if (!isDragging) return;
 
     isDragging = false;
-    techContainer.style.transition = 'transform 0.3s ease-in-out'; // Re-enable transition
+    techContainer.style.transition = 'transform 0.3s ease-in-out'; 
 });
 
+
+//? for the mobile devices
 techContainer.addEventListener('touchstart', handleDragStart, { passive: true });
 document.addEventListener('touchmove', handleDragMove, { passive: false });
 document.addEventListener('touchend', handleDragEnd);
@@ -122,7 +101,7 @@ document.addEventListener('touchcancel', handleDragEnd);
 function handleDragStart(e) {
     isDragging = true;
     startX = e.touches[0].clientX - scrollX;
-    techContainer.style.transition = 'none'; // Disable transition during dragging
+    techContainer.style.transition = 'none'; 
 }
 
 function handleDragMove(e) {
@@ -131,7 +110,6 @@ function handleDragMove(e) {
     const mouseX = e.touches[0].clientX;
     const distanceX = mouseX - startX;
 
-    // Only allow scrolling to the left
     scrollX = Math.min(distanceX, maxScroll);
     techContainer.style.transform = `translateX(${scrollX}px)`;
 }
@@ -140,13 +118,16 @@ function handleDragEnd() {
     if (!isDragging) return;
 
     isDragging = false;
-    techContainer.style.transition = 'transform 0.3s ease-in-out'; // Re-enable transition
+    techContainer.style.transition = 'transform 0.3s ease-in-out';
 }
-
+//technologies container animation
 window.addEventListener('DOMContentLoaded', () => {
   techContainer.classList.add('active');
 });
 
 techContainer.addEventListener('click', () => {
     techContainer.classList.remove('active');
+});
+techContainer.addEventListener('touchstart', () => {
+  techContainer.classList.remove('active');
 });
