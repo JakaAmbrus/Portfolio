@@ -125,9 +125,10 @@ window.addEventListener('DOMContentLoaded', () => {
   techContainer.classList.add('active');
 });
 
-techContainer.addEventListener('click', () => {
-    techContainer.classList.remove('active');
+techContainer.addEventListener('click', (event) => {
+  techContainer.classList.remove('active');
 });
-techContainer.addEventListener('touchstart', () => {
+
+techContainer.addEventListener('touchstart', (event) => {
   techContainer.classList.remove('active');
 });
