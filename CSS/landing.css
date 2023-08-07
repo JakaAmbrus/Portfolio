@@ -5,8 +5,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-    font-family: 'CustomFont';
-    
+    font-family: Poppins,sans-serif;  
 }
 #landing-page-container{
     position: relative;

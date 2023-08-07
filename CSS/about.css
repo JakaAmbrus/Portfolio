@@ -53,8 +53,10 @@
     margin-top: 1em;
   }
   #socials{
+    margin-top: 0.5em;
     font-size: 2em;
-    color: hsl(212, 75%, 30%);
+    color: hsl(212, 75%, 40%);
+    font-weight: 500;
   }
   .icons{
     margin: 0.5em;
