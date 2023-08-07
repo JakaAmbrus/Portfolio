@@ -129,3 +129,6 @@ window.addEventListener('DOMContentLoaded', () => {
 techContainer.addEventListener('click', () => {
     techContainer.classList.remove('active');
 });
+techContainer.addEventListener('touchstart', () => {
+  techContainer.classList.remove('active');
+});
