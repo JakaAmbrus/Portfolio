@@ -138,3 +138,11 @@ function handleDragEnd() {
     isDragging = false;
     techContainer.style.transition = 'transform 0.3s ease-in-out'; // Re-enable transition
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+  techContainer.classList.add('active');
+});
+
+techContainer.addEventListener('click', () => {
+    techContainer.classList.remove('active');
+});

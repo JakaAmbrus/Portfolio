@@ -121,7 +121,7 @@
         align-items: center;
         height: 100%;
         width: 90%;
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
     #about-right{
         width: 80vw;
