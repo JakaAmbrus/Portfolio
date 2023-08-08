@@ -4,20 +4,19 @@
     align-items: center;
     overflow: hidden;
     width: 100%;
-    height: 27em;
+    height: 27rem;
     background: var(--theme-color);
 }
 #technologies-container{
     display: flex;
     width: 80%;
     max-width: 2000px;
-    height: 11em;
+    height: 11rem;
     overflow: hidden;
     position: relative;
 }
 #tech-container{
     position: absolute;
-    width: 207;
     display: flex;
     left: 0;
     top: 0;
@@ -34,8 +33,8 @@
     }
 }
 .technologies{
-    height: 11em;
-    width: 23em;
+    height: 11rem;
+    width: 23rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,10 +46,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 8em;
-    height: 8em;
+    margin-top: 0.1rem;
+    width: 8rem;
+    height: 8rem;
     background: white;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.199);
     border-radius: 10%;
 }
 .tech-icon-container:before {
@@ -59,39 +59,39 @@
     padding-top: 100%;
 }
 .tech-icons{
-    font-size: 5.5em;
+    font-size: 5.5rem;
     position: absolute;
 }
 .tech-img{
-    height: 5.5em;
-    width: 5.5em;
+    height: 5.5rem;
+    width: 5.5rem;
 }
 .tech-text{
-    margin-top: 0.3em;
-    font-size: 2em;
+    margin-top: 0.3rem;
+    font-size: 2rem;
     font-weight: 100;
     color: white;
 }
 @media (max-width: 1100px) {
     #technologies-section{
         font-size: 6px;
-        height: 18em;
+        height: 18rem;
        
     }
 }
 @media (max-width: 1100px) and (min-height: 2000px) {
     #technologies-section{
         font-size: 15px;
-        height: 20em;
+        height: 20rem;
     }
 }
 @media (min-height: 2500px) {
     #technologies-section{
         font-size: 20px;
-        height: 18em;
+        height: 18rem;
     }
     .technologies{
-        width: 18em;
+        width: 18rem;
     }
     
 }

@@ -22,7 +22,7 @@ const electronsIDs = [
     });
   }
 
- //scrolltrigger animations
+ //scroll trigger animations
  const scrollThreshold = 150;
 
  function scrollToIntro() {
