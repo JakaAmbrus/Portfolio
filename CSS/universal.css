@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'CustomFont';
-    src: url('/fonts/Gilroy-ExtraBold.ttf') format('truetype'); 
+    src: url('../fonts/Gilroy-ExtraBold.ttf') format('truetype'); 
   }
 
 :root {

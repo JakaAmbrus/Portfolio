@@ -33,10 +33,10 @@ const electronsIDs = [
      ease: "power1.inOut",
    });
  }
- 
+
  let isFirstScroll = true;
  window.addEventListener("scroll", () => {
-   if (isFirstScroll && window.scrollY <= scrollThreshold && clicked === false) {
+   if (isFirstScroll && window.scrollY <= scrollThreshold && clicked === false && startPosition == true) {
      scrollToIntro();
      isFirstScroll = false;
    }
@@ -121,9 +121,17 @@ function handleDragEnd() {
     isDragging = false;
     techContainer.style.transition = 'transform 0.3s ease-in-out';
 }
+ //to prevent scroll if the page is not at start on refresh
+ let startPosition = true;
+ function checkPosition(){
+   if (window.scrollY > 0) {
+     startPosition = false;
+ }
+ }
 //technologies container animation
 window.addEventListener('DOMContentLoaded', () => {
   techContainer.classList.add('active');
+  checkPosition();
 });
 
 techContainer.addEventListener('click', () => {
