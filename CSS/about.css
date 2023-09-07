@@ -1,7 +1,7 @@
 #about-me{
     display: flex;
     justify-content: center;
-    height: 110vh;
+    height: auto;
     width: 100vw;
     background-image: url('../img/svg-wave.svg');
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@
   }
   #about-content-container{
     width: 100%;
-    height: 80vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,12 +26,13 @@
   #about-content{
     display: flex;
     width: 80%;
-    height: 64vh;
+    height: auto;
+    margin: 5em 0;
   }
   #about-left{
     font-size: 9;
     width: 60%;
-    height: 64vh;
+    height: auto;
     /* border: 1px solid black; */
   }
   .blue-fonts{
@@ -88,8 +89,12 @@
   }
 }
 @media (max-width: 1100px) {
+  .white-space{
+      height: 0;
+    }
     #about-content-container{
         align-items: end;
+        margin-top: 5em;
     }
     #about-content{
         flex-direction: column-reverse;
@@ -112,14 +117,16 @@
   #about-me{
     background-image: url('../img/svg-wave-mobile.svg');
 }
+
 }
 @media (min-height: 2500px) {
     #about-content-container{
         align-items: end;
-        height: 90vh;
+        height:  auto;
+        margin-top: 15em;
     }
     .white-space{
-      height: 15vh;
+      height: 0;
     }
     #about-content{
         flex-direction: column-reverse;
@@ -130,7 +137,6 @@
     }
     #about-right{
         width: 80vw;
-        margin-top: 5%;
     }
     #about-left{
         margin-top: 2em;

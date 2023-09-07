@@ -23,14 +23,14 @@
     top: 0;
 }
 .active {
-    animation: moveItems 180s linear infinite;
+    animation: moveItems 100s linear infinite;
 }
 @keyframes moveItems {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-5060px);
     }
 }
 .technologies{
