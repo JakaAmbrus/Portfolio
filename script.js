@@ -46,7 +46,7 @@ let clicked = false;
  document.querySelector('#about-nav').addEventListener('click', function (event) {
   event.preventDefault();
   clicked = true;
-  const aboutSection = document.querySelector('#about-content-container');
+  const aboutSection = document.querySelector('#about-me');
   
   aboutSection.scrollIntoView({
       behavior: 'smooth'
