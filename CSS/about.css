@@ -118,6 +118,9 @@
   #about-me{
     background-image: url('../img/svg-wave-mobile.svg');
 }
+.icons{
+  margin-bottom: 0;
+}
 
 }
 @media (min-height: 2500px) {
@@ -148,7 +151,10 @@
     #about-me{
       background-image: url('../img/svg-wave-mobile.svg');
   }
-    
+  .icons{
+    margin-bottom: 0;
+  }
+  
 }
   @media (min-width: 2501px) {
     #about-content-container{
