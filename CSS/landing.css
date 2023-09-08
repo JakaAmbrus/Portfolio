@@ -11,7 +11,7 @@
     position: relative;
     height: 100%;
     width: 100%;
-    max-width: 3500px;
+    max-width: 2500px;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -50,7 +50,8 @@
     right: 2%;
     margin-top: auto;
     width: 50vw;
-    height: 50vw;
+    aspect-ratio: 1;
+    max-width: 1200px;
     overflow: hidden;
 }
 #web-img{
