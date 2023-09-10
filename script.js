@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
-  const loadingScreen = document.querySelector('.loading-screen');
-  loadingScreen.classList.add('hidden');
+  // const loadingScreen = document.querySelector('.loading-screen');
+  // loadingScreen.classList.add('hidden');
 });
 //electron reverse animation
 const electronsIDs = [
