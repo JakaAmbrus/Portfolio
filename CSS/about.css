@@ -1,7 +1,6 @@
 #about-me{
     display: flex;
     justify-content: center;
-    height: auto;
     width: 100vw;
     background-image: url('../img/svg-wave.svg');
     background-repeat: no-repeat;
@@ -18,7 +17,6 @@
   }
   #about-content-container{
     width: 100%;
-    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,14 +25,12 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
-    height: auto;
     margin: 5em 0;
     
   }
   #about-left{
     font-size: 9;
     width: 60%;
-    height: auto;
   }
   .blue-fonts{
     color: var(--theme-color);
@@ -101,7 +97,7 @@
     #about-content{
         flex-direction: column-reverse;
         align-items: center;
-        height: 60%;
+        /* height: 60%; */
         width: 90%;
     }
     #about-right{
