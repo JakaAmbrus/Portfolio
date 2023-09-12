@@ -28,38 +28,56 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin: 5em 0;
-    
+    margin: 5em 0; 
   }
   .projects-left{
-    font-size: 9;
-    width: 60%;
+    width: 45%;
+
   }
   .projects-header{
+    margin-top: 2em;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .projects-header-text{
+    color: rgb(61, 58, 58);
     font-size: 3em;
   }
+  #projects-header-img-container{
+    height: 4em;
+    width: 4em;
+    position: relative;
+    margin-right: 0.2em;
+  }
+  .projects-header-img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -6.5%;
+  }
   .projects-text{
-    color: hsl(212, 75%, 30%);
     margin-top: 1em;
     font-size: 1.8em;
     font-family: 'CustomFont';
     font-weight: 700;
     line-height: 2;
     margin-right: 1em;
+    color: rgb(61, 58, 58);
+    opacity: 0.9;
   }
   .projects-icons{
     margin-top: 1em;
   }
   .playlink-icons{
     margin: 0.5em;
-    font-size: 4em;
-    color: black;
+    font-size: 3em;
+    color: rgb(61, 58, 58);
   }
   .playlink-icons:first-child{
     margin-left: 0;
   }
   .projects-right{
-    width: 40%;
+    width: 50%;
     max-width: 700px;
     height: 100%;
     position: relative;
@@ -71,4 +89,66 @@
 .projects-img-container > img{
     height: 100%;
     width: 100%;
+}
+#playlink-container{
+  color: rgb(61, 58, 58);
+}
+@media (max-width: 2000px){
+  .projects-content-container{
+    font-size: 11px;
+  }
+}
+@media (max-width: 1100px) {
+  #projects-title{
+    font-size: 8vw;
+}
+ 
+    .projects-content{
+        flex-direction: column;
+        align-items: center;
+        /* height: 60%; */
+        width: 90%;
+    }
+    .projects-right{
+        width: 65vw;
+        max-width: none;
+    }
+    .projects-left{
+        margin-top: 2em;
+        font-size: 1.6vw;
+        width: 100%;
+    }
+    .projects-content{
+      margin-top: 0; 
+    }
+
+}
+@media (min-height: 2500px) {
+  #projects-title{
+    font-size: 8.5vw;
+}
+ 
+    .projects-content{
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .projects-right{
+        width: 65vw;
+        max-width: none;
+    }
+    .projects-left{
+        margin-top: 2em;
+        font-size: 1.6vw;
+        width: 100%;
+    }
+    .projects-content{
+      margin-top: 0; 
+    }
+}
+@media (min-width: 2501px) {
+  .projects-left{
+     font-size: 13px;
+    }
+ 
 }

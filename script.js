@@ -1,7 +1,3 @@
-window.addEventListener('load', () => {
-  // const loadingScreen = document.querySelector('.loading-screen');
-  // loadingScreen.classList.add('hidden');
-});
 //electron reverse animation
 const electronsIDs = [
     "electron-1", "electron-2", "electron-3", "electron-4", "electron-5", "electron-6",
@@ -131,7 +127,6 @@ function handleDragEnd() {
 //technologies container animation
 window.addEventListener('DOMContentLoaded', () => {
   techContainer.classList.add('active');
-  checkPosition();
 });
 
 techContainer.addEventListener('click', () => {
@@ -139,4 +134,9 @@ techContainer.addEventListener('click', () => {
 });
 techContainer.addEventListener('touchstart', () => {
   techContainer.classList.remove('active');
+});
+window.addEventListener('load', () => {
+  // const loadingScreen = document.querySelector('.loading-screen');
+  // loadingScreen.classList.add('hidden');
+  checkPosition();
 });
