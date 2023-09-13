@@ -155,6 +155,7 @@ ul, li {
         height: 100vw;
         top: 28%;
         left: 0.1%;
+        max-width: none;
     }
     #landing-page-content-container{
         width: 100vw;
@@ -186,8 +187,4 @@ ul, li {
         font-size: 15px;
     }
 }
-@media (min-width: 3500px) {
-    #landing-img-container{
-     
-    }
-}
+
