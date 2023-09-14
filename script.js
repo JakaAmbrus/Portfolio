@@ -177,3 +177,15 @@ function makeRobotLook(){
 }
 formInputs.forEach(input => {
   input.addEventListener('input', makeRobotHappy)});
+
+  //for text areas to expand
+  document.addEventListener('DOMContentLoaded', () => {
+    let textareas = document.querySelectorAll('textarea');
+  
+    textareas.forEach(textarea => {
+      textarea.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = this.scrollHeight + 'px';
+      });
+    });
+  });
