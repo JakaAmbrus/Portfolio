@@ -8,7 +8,6 @@
     color: #E8E8E8;
 }
 #footer-center{
-    border: 1px solid black;
     position: relative;
     height: 14em;
     display: flex;
@@ -31,4 +30,15 @@
     color: #a3a3a3;
     font-size: 2em;
     z-index: 2;
+}
+@media (max-width: 1100px) {
+    #contact-form{
+        width: 95vw;
+    }
+}
+
+@media (min-height: 2500px) {
+    #footer{
+        font-size: 20px;
+    }
 }

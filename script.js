@@ -19,28 +19,28 @@ const electronsIDs = [
   }
 
  //scroll trigger animations
- const scrollThreshold = 50;
+//  const scrollThreshold = 150;
 
- function scrollToIntro() {
-   const introPage = document.querySelector("#introduction-page-container");
-   gsap.to(window, {
-     scrollTo: { y: introPage.offsetTop, offsetY: window.innerHeight - introPage.offsetHeight },
-     duration: 0.5,
-     ease: "power1.inOut",
-   });
- }
+//  function scrollToIntro() {
+//    const introPage = document.querySelector("#introduction-page-container");
+//    gsap.to(window, {
+//      scrollTo: { y: introPage.offsetTop, offsetY: window.innerHeight - introPage.offsetHeight },
+//      duration: 0.5,
+//      ease: "power1.inOut",
+//    });
+//  }
 
- let isFirstScroll = true;
- window.addEventListener("scroll", () => {
-   if (isFirstScroll && window.scrollY <= scrollThreshold && clicked === false && startPosition == true) {
-     scrollToIntro();
-     isFirstScroll = false;
-   }
- });
- //! for preventing scrolltrigger when nav is clicked
- const landingPage = document.getElementById('landing-page');
- let clicked = false;
- landingPage.addEventListener('click', ()=>{clicked = true})
+//  let isFirstScroll = true;
+//  window.addEventListener("scroll", () => {
+//    if (isFirstScroll && window.scrollY <= scrollThreshold && clicked === false && startPosition == true) {
+//      scrollToIntro();
+//      isFirstScroll = false;
+//    }
+//  });
+//  //! for preventing scrolltrigger when nav is clicked
+//  const landingPage = document.getElementById('landing-page');
+//  let clicked = false;
+//  landingPage.addEventListener('click', ()=>{clicked = true})
 
 //technologies scrolling
 const techContainer = document.getElementById('tech-container');
