@@ -19,7 +19,7 @@ const electronsIDs = [
   }
 
  //scroll trigger animations
- const scrollThreshold = 150;
+ const scrollThreshold = 50;
 
  function scrollToIntro() {
    const introPage = document.querySelector("#introduction-page-container");
@@ -37,18 +37,10 @@ const electronsIDs = [
      isFirstScroll = false;
    }
  });
-//navigation scrolling
-let clicked = false;
- document.querySelector('#about-nav').addEventListener('click', function (event) {
-  event.preventDefault();
-  clicked = true;
-  const aboutSection = document.querySelector('#about-me');
-  
-  aboutSection.scrollIntoView({
-      behavior: 'smooth'
-  });
-
-});
+ //! for preventing scrolltrigger when nav is clicked
+ const landingPage = document.getElementById('landing-page');
+ let clicked = false;
+ landingPage.addEventListener('click', ()=>{clicked = true})
 
 //technologies scrolling
 const techContainer = document.getElementById('tech-container');
@@ -140,3 +132,48 @@ window.addEventListener('load', () => {
   // loadingScreen.classList.add('hidden');
   checkPosition();
 });
+
+
+//! robot animations
+
+const robot = document.querySelector('#robot-container');
+const eyes = document.querySelectorAll('.robot-eyes');
+const resumeDocument = document.querySelector('#resume-link');
+const happyRobot = document.querySelectorAll('.happy');
+const formInputs = document.querySelectorAll('.form-inputs');
+
+
+document.addEventListener('mousemove', function(e) {
+  const { left, top, width, height } = robot.getBoundingClientRect();
+  const centerX = left + width/2;
+  const centerY = top + height/2;
+  const deltaX = e.clientX - centerX;
+  const deltaY = e.clientY - centerY;
+  const angle = Math.atan2(deltaY, deltaX);
+  const distance = 8;
+  const eyeMoveX = distance * Math.cos(angle);
+  const eyeMoveY = distance * Math.sin(angle);
+  eyes.forEach(eye => {
+    eye.style.transform = `translate(${eyeMoveX}px, ${eyeMoveY}px)`;
+  });
+});
+resumeDocument.addEventListener('mouseenter', makeRobotHappy);
+function makeRobotHappy(){
+  happyRobot.forEach(element => {
+    element.style.display = 'block';
+});
+  eyes.forEach(eye => {
+    eye.style.display = 'none';
+});
+}
+resumeDocument.addEventListener('mouseleave', makeRobotLook);
+function makeRobotLook(){
+  happyRobot.forEach(element => {
+    element.style.display = 'none';
+});
+  eyes.forEach(eye => {
+    eye.style.display = 'block';
+});
+}
+formInputs.forEach(input => {
+  input.addEventListener('input', makeRobotHappy)});

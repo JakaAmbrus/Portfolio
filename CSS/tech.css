@@ -137,5 +137,8 @@
     .technologies{
         width: 18em;
     }
+    #technologies-container{
+        font-size: 22px;
+    }
     
 }

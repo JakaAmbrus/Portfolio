@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="CSS/universal.css">
     <link rel="stylesheet" href="CSS/contact.css">
     <link rel="stylesheet" href="CSS/resume.css">
+    <link rel="stylesheet" href="CSS/footer.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
@@ -37,14 +38,14 @@
     <section id="landing-page">
         <div id="landing-page-container">
         <div id="landing-page-content-container">
-            <h1 id="name">
+            <h1 id="landing-name">
                 Jaka Ambruš
             </h1>
             <h2 id="position-title">
                 <span><</span> Fullstack Web Developer <span>/ ></span>
             </h2>
             <div id="landing-page-navigation">
-                <a id="about-nav" class="landing-links" title="About" href="about">ABOUT</a><b class="separator">/</b><a class="landing-links"  title="Projects" href="#">PROJECTS</a><b class="separator">/</b><a  class="landing-links"  title="Contact" href="#" class="">CONTACT</a>
+                <a id="about-nav" class="landing-links" title="About" href="#about-me">ABOUT</a><b class="separator">/</b><a class="landing-links"  title="Projects" href="#projects">PROJECTS</a><b class="separator">/</b><a  class="landing-links"  title="Contact" href="#contact-me" class="">CONTACT</a>
             </div>
         </div>
         <div id="landing-img-container">
@@ -315,7 +316,7 @@
     </section>
     <section id="projects">
         <div id="projects-container">
-            <h1 id="projects-title">
+            <h1 class="projects-title">
                 Some Projects<span>.</span>
             </h1>
             <div class="projects-content-container" id="playlink-container">
@@ -347,24 +348,39 @@
         </div>
     </section>
     <section id="resume">
-        <a href="path-to-your-resume.pdf" id="resume-container">
+        <div  id="resume-container">
             <i class="fas fa-file-pdf"></i>
-            <div id="resume-link">Check out my Resume</div>
-        </a>
+            <a href="path-to-your-resume.pdf" id="resume-link">Check out my Resume</a>
+        </div>
+        <div id="robot-container">
+            <img src="img/robot-no-eyes-head-2.png" alt="robot">
+            <div id="robot-left-eye" class="robot-eyes"></div>
+            <div id="robot-right-eye" class="robot-eyes"></div>
+            <div class="robot-happy-eyes happy" id="left-happy-eye"></div>
+            <div class="robot-happy-eyes happy" id="right-happy-eye"></div>
+            <div id="happy-robot-light" class="happy"><img src="img/heppy-robot-lights.png" alt="happy robot lights"></div>
+            <div id="happy-robot-antena" class="happy"></div>
+        </div>
     </section>
     <section id="contact-me">
+        <h1 class="projects-title"><span>Contact Me</span>.</h1>
         <form id="contact-form">
             <label for="name">NAME:</label>
-            <input type="text" id="name" name="name" required>
-            
+            <input type="text" id="name" name="name" class="form-inputs" required>
             <label for="email">EMAIL:</label>
-            <input type="email" id="email" name="email" required>
-            
+            <input type="email" id="email" name="email" class="form-inputs" required>
             <label for="message">MESSAGE:</label>
-            <textarea id="message" name="message" required></textarea>
-            
+            <textarea id="message" name="message" class="form-inputs" required></textarea>
             <button type="submit">SEND INQUIRY</button>
         </form>
+    </section>
+    <section id="footer">
+        <div id="footer-left"></div>
+        <div id="footer-center">
+            <p>Copyright Jaka A. 2023</p>
+            <img src="img/footer-img.png" alt="footer img">
+        </div>
+        <div id="footer-right"></div>
     </section>
 
 </body>
