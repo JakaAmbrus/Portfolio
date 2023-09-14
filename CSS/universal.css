@@ -199,6 +199,9 @@ ul, li {
     #landing-page-content-container {
         font-size: 15px;
     }
+    #introduction-text-content-container{
+      font-size: 5.2rem;
+  }
 }
 
 
