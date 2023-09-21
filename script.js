@@ -18,30 +18,6 @@ const electronsIDs = [
     });
   }
 
- //scroll trigger animations
-//  const scrollThreshold = 150;
-
-//  function scrollToIntro() {
-//    const introPage = document.querySelector("#introduction-page-container");
-//    gsap.to(window, {
-//      scrollTo: { y: introPage.offsetTop, offsetY: window.innerHeight - introPage.offsetHeight },
-//      duration: 0.5,
-//      ease: "power1.inOut",
-//    });
-//  }
-
-//  let isFirstScroll = true;
-//  window.addEventListener("scroll", () => {
-//    if (isFirstScroll && window.scrollY <= scrollThreshold && clicked === false && startPosition == true) {
-//      scrollToIntro();
-//      isFirstScroll = false;
-//    }
-//  });
-//  //! for preventing scrolltrigger when nav is clicked
-//  const landingPage = document.getElementById('landing-page');
-//  let clicked = false;
-//  landingPage.addEventListener('click', ()=>{clicked = true})
-
 //technologies scrolling
 const techContainer = document.getElementById('tech-container');
 let isDragging = false;
@@ -109,16 +85,11 @@ function handleDragEnd() {
     isDragging = false;
     techContainer.style.transition = 'transform 0.3s ease-in-out';
 }
- //to prevent scroll if the page is not at start on refresh
- let startPosition = true;
- function checkPosition(){
-   if (window.scrollY > 0) {
-     startPosition = false;
- }
- }
+
 //technologies container animation
 window.addEventListener('DOMContentLoaded', () => {
   techContainer.classList.add('active');
+  // checkPosition();
 });
 
 techContainer.addEventListener('click', () => {
@@ -130,7 +101,7 @@ techContainer.addEventListener('touchstart', () => {
 window.addEventListener('load', () => {
   // const loadingScreen = document.querySelector('.loading-screen');
   // loadingScreen.classList.add('hidden');
-  checkPosition();
+  // checkPosition();
 });
 
 
@@ -189,3 +160,4 @@ formInputs.forEach(input => {
       });
     });
   });
+
