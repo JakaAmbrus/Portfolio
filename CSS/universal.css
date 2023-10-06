@@ -6,6 +6,10 @@
     font-family: 'CustomFont2';
     src: url('../fonts/Poppins-SemiBold.ttf') format('truetype'); 
 }
+@font-face {
+  font-family: 'CustomFont3';
+  src: url('../fonts/Gilroy-Light.otf') format('truetype'); 
+}
 
 :root {
     --mainColor: rgb(227, 224, 224);
