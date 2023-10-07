@@ -1,182 +1,182 @@
 @font-face {
-    font-family: 'CustomFont';
-    src: url('../fonts/Gilroy-ExtraBold.ttf') format('truetype'); 
-  }
-  @font-face {
-    font-family: 'CustomFont2';
-    src: url('../fonts/Poppins-SemiBold.ttf') format('truetype'); 
+  font-family: "CustomFont";
+  src: url("../fonts/Gilroy-ExtraBold.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'CustomFont3';
-  src: url('../fonts/Gilroy-Light.otf') format('truetype'); 
+  font-family: "CustomFont2";
+  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CustomFont3";
+  src: url("../fonts/Gilroy-Light.otf") format("truetype");
 }
 
 :root {
-    --mainColor: rgb(227, 224, 224);
-    --mainColorDimmed: rgba(227, 224, 224, 0.5);
-    --mainColor80: rgba(227, 224, 224, 0.888);
-    --theme-color: #68a4e9;
-    --theme-color-secondary: #6B62F5;
-    --theme-color-secondary-2: #6685FF;
-    --dark-theme-color: #1B1B1B;
-    --light-theme-color: hsl(212, 75%, 96%);
-  }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #252525;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  --mainColor: rgb(227, 224, 224);
+  --mainColorDimmed: rgba(227, 224, 224, 0.5);
+  --mainColor80: rgba(227, 224, 224, 0.888);
+  --theme-color: #68a4e9;
+  --theme-color-secondary: #6b62f5;
+  --theme-color-secondary-2: #6685ff;
+  --dark-theme-color: #1b1b1b;
+  --light-theme-color: hsl(212, 75%, 96%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #252525;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-html, body{
-    margin: 0;
-    font-size: 10px;
-    font-family: 'CustomFont', sans-serif;
-    overflow-x: hidden;
-    scroll-behavior: smooth; 
+html,
+body {
+  margin: 0;
+  font-size: 10px;
+  font-family: "CustomFont", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
-h1, p{
+h1,
+p {
   margin: 0;
   padding: 0;
 }
-a{
+a {
   text-decoration: none;
 }
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: rgb(236, 236, 241);
-    border-radius: 5px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: #222;
-  }
-  
-  ::-moz-scrollbar {
-    width: 10px;
-  }
-  
-  ::-moz-scrollbar-thumb {
-    background-color: rgb(236, 236, 241);
-    border-radius: 5px;
-  }
-  
-  ::-moz-scrollbar-track {
-    background-color: #222;
-  }
-  
-  ::-ms-scrollbar {
-    width: 10px;
-  }
-  
-  ::-ms-scrollbar-thumb {
-    background-color: rgb(236, 236, 241);
-    border-radius: 5px;
-  }
-  
-  ::-ms-scrollbar-track {
-    background-color: #222;
-  }
+  width: 10px;
+}
 
-@media (max-width: 2000px){
-  #landing-page-content-container{
+::-webkit-scrollbar-thumb {
+  background-color: rgb(236, 236, 241);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #222;
+}
+
+::-moz-scrollbar {
+  width: 10px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: rgb(236, 236, 241);
+  border-radius: 5px;
+}
+
+::-moz-scrollbar-track {
+  background-color: #222;
+}
+
+::-ms-scrollbar {
+  width: 10px;
+}
+
+::-ms-scrollbar-thumb {
+  background-color: rgb(236, 236, 241);
+  border-radius: 5px;
+}
+
+::-ms-scrollbar-track {
+  background-color: #222;
+}
+
+@media (max-width: 2000px) {
+  #landing-page-content-container {
     font-size: 11px;
+  }
 }
-}
-@media (max-width: 1100px){
-  #landing-page-content-container{
+@media (max-width: 1100px) {
+  #landing-page-content-container {
     font-size: 0.7vw;
   }
-  #introduction-text-content-container{
+  #introduction-text-content-container {
     width: 80%;
     font-size: 6.5vh;
-}
+  }
 }
 @media (max-width: 1100px) and (orientation: portrait) {
-    #landing-page-container{
-        flex-direction: column;
-    }
-    #landing-img-container{
-        width: 100vw;
-        height: 100vw;
-        top: 28%;
-        left: 0.1%;
-    }
-    #landing-page-content-container{
-        width: 100vw;
-        justify-content: end;
-        height: 25vh;
-        font-size: 1.2vw;
-    }
-
-    #landing-page-content-container h1 {
-        margin: 0;
-    }
-    #landing-page-content-container h2{
-      font-size: 4em;
-    }
-    #landing-page-navigation{
-      font-size: 1.8em;
-    }
-    #introduction-text-content-container{
-        width: 80%;
-        font-size: 6.5vw;
-    }
+  #landing-page-container {
+    flex-direction: column;
   }
-  @media (min-height: 2500px) and (orientation: portrait){
-    #landing-page-container{
-        flex-direction: column;
-    }
-    #landing-img-container{
-        width: 100vw;
-        height: 100vw;
-        top: 28%;
-        left: 0.1%;
-        max-width: none;
-    }
-    #landing-page-content-container{
-        width: 100vw;
-        justify-content: end;
-        height: 25vh;
-        font-size: 15px;
-        
-    }
-    #landing-page-content-container h1 {
-        margin: 0;
-    }
-    #landing-page-content-container h2{
-      font-size: 4em;
-    }
-    #introduction-text-content-container{
-        width: 80%;
-        font-size: 8vw;
-    }
-    #position-title{
-      font-size: 4em;
-    }
-    #landing-page-navigation{
-      font-size: 2em;
-    }
-}
+  #landing-img-container {
+    width: 100vw;
+    height: 100vw;
+    top: 28%;
+    left: 0.1%;
+  }
+  #landing-page-content-container {
+    width: 100vw;
+    justify-content: end;
+    height: 25vh;
+    font-size: 1.2vw;
+  }
 
-  @media (min-width: 2501px) {
-    #landing-page-content-container {
-        font-size: 15px;
-    }
-    #introduction-text-content-container{
-      font-size: 5.2rem;
+  #landing-page-content-container h1 {
+    margin: 0;
+  }
+  #landing-page-content-container h2 {
+    font-size: 4em;
+  }
+  #landing-page-navigation {
+    font-size: 1.8em;
+  }
+  #introduction-text-content-container {
+    width: 80%;
+    font-size: 6.5vw;
+  }
+}
+@media (min-height: 2500px) and (orientation: portrait) {
+  #landing-page-container {
+    flex-direction: column;
+  }
+  #landing-img-container {
+    width: 100vw;
+    height: 100vw;
+    top: 28%;
+    left: 0.1%;
+    max-width: none;
+  }
+  #landing-page-content-container {
+    width: 100vw;
+    justify-content: end;
+    height: 25vh;
+    font-size: 15px;
+  }
+  #landing-page-content-container h1 {
+    margin: 0;
+  }
+  #landing-page-content-container h2 {
+    font-size: 4em;
+  }
+  #introduction-text-content-container {
+    width: 80%;
+    font-size: 8vw;
+  }
+  #position-title {
+    font-size: 4em;
+  }
+  #landing-page-navigation {
+    font-size: 2em;
   }
 }
 
-
+@media (min-width: 2501px) {
+  #landing-page-content-container {
+    font-size: 15px;
+  }
+  #introduction-text-content-container {
+    font-size: 5.2rem;
+  }
+}

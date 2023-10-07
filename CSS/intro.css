@@ -1,26 +1,24 @@
-#introduction-page{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    background-color: var(--theme-color);
+#introduction-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--theme-color);
 }
-#introduction-page-container{
-    height: 100%;
-    width: 100%;
-    max-width: 2500px;
-    font-family: 'CustomFont';
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#introduction-page-container {
+  height: 100%;
+  width: 100%;
+  max-width: 2500px;
+  font-family: "CustomFont";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#introduction-text-content-container{
-    /* font-size: 5.2rem; */
-    font-size: 3vw;
-    width: 58%;
-
+#introduction-text-content-container {
+  /* font-size: 5.2rem; */
+  font-size: 3vw;
+  width: 58%;
 }
-.white-fonts{
-    color: var(--light-theme-color);
+.white-fonts {
+  color: var(--light-theme-color);
 }
-

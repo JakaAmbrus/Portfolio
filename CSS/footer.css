@@ -1,60 +1,60 @@
-#footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6em;
-    width: 100%;
-    background: white;
-    color: #E8E8E8;
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6em;
+  width: 100%;
+  background: white;
+  color: #e8e8e8;
 }
-#footer-center{
-    position: relative;
-    height: 14em;
-    display: flex;
-    justify-content: center; 
+#footer-center {
+  position: relative;
+  height: 14em;
+  display: flex;
+  justify-content: center;
 }
 
-#footer-center>img{
-    z-index: 1;
-    height: 13em;
-    width: 13em;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.6;
+#footer-center > img {
+  z-index: 1;
+  height: 13em;
+  width: 13em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
 }
-#footer-center>p{
-    font-family: 'CustomFont2', sans-serif;
-    margin-top: 2.2em;
-    color: #a3a3a3;
-    font-size: 2em;
-    z-index: 2;
+#footer-center > p {
+  font-family: "CustomFont2", sans-serif;
+  margin-top: 2.2em;
+  color: #a3a3a3;
+  font-size: 2em;
+  z-index: 2;
 }
-.footer-navs{
-    display: flex;
-    gap: 5em;
+.footer-navs {
+  display: flex;
+  gap: 5em;
 }
-.footer-links{
-    font-size: 1.5em;
-    color: #a3a3a3;
-    font-family: 'CustomFont2', sans-serif;
-    transition: color 0.5s ease;
+.footer-links {
+  font-size: 1.5em;
+  color: #a3a3a3;
+  font-family: "CustomFont2", sans-serif;
+  transition: color 0.5s ease;
 }
-.footer-links:hover{
-    color: #6f6e6e;
+.footer-links:hover {
+  color: #6f6e6e;
 }
 @media (max-width: 1100px) {
-    .footer-navs{
-        display: none;
-    }
+  .footer-navs {
+    display: none;
+  }
 }
 
 @media (min-height: 2500px) {
-    #footer{
-        font-size: 20px;
-    }
-    .footer-navs{
-        display: none;
-    }
+  #footer {
+    font-size: 20px;
+  }
+  .footer-navs {
+    display: none;
+  }
 }
