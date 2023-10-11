@@ -52,7 +52,16 @@
   height: 100%;
   position: absolute;
 }
-
+#astro-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+}
+#projects-header-img-astro {
+  width: 3em;
+  height: 3em;
+}
 .projects-text {
   margin-left: 0.05em;
   margin-top: 0.2em;
