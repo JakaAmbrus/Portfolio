@@ -107,10 +107,11 @@
   }
   #about-right {
     width: 65vw;
+    max-width: 500px;
   }
   #about-left {
     margin-top: 2em;
-    font-size: 1.8vw;
+    font-size: clamp(8px, 1.8vw, 12px);
     width: 100%;
   }
   #about-img-container {
@@ -121,6 +122,14 @@
   }
   .icons {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 1100px) and (min-height: 2000px) and (orientation: portrait) {
+  #about-right {
+    max-width: 1000px;
+  }
+  #about-left {
+    font-size: 1.8vw;
   }
 }
 @media (min-height: 2500px) {
