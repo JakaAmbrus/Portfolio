@@ -75,6 +75,13 @@
   height: 90%;
   width: 90%;
 }
+#csharp-logo {
+  height: 78%;
+  width: 78%;
+}
+#c-sharp {
+  font-size: 6.5em;
+}
 @media (max-width: 2000px) {
   #technologies-section {
     height: 18em;
@@ -99,6 +106,9 @@
   }
   .tech-text {
     font-size: 1.7em;
+  }
+  #c-sharp {
+    font-size: 5.5em;
   }
 }
 @media (orientation: portrait) {
