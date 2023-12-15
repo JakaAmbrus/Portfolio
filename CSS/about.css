@@ -124,15 +124,15 @@
     margin-bottom: 0;
   }
 }
-@media (max-width: 1100px) and (min-height: 2000px) and (orientation: portrait) {
+/* @media (max-width: 1100px) and (min-height: 2000px) and (orientation: portrait) {
   #about-right {
     max-width: 1000px;
   }
   #about-left {
     font-size: 1.8vw;
   }
-}
-@media (min-height: 2500px) {
+} */
+/* @media (min-height: 2500px) {
   #about-content-container {
     align-items: end;
     height: auto;
@@ -163,7 +163,7 @@
   .icons {
     margin-bottom: 0;
   }
-}
+} */
 @media (min-width: 2501px) {
   #about-content-container {
     margin: 10em 0;

@@ -43,7 +43,7 @@ button {
     width: 95vw;
   }
 }
-@media (max-width: 1100px) and (min-height: 2000px) {
+/* @media (max-width: 1100px) and (min-height: 2000px) {
   #contact-form {
     font-size: 30px;
     width: 95vw;
@@ -52,8 +52,8 @@ button {
     padding: 3em;
     margin-bottom: 3em;
   }
-}
-@media (min-height: 2500px) {
+} */
+/* @media (min-height: 2500px) {
   #contact-form {
     font-size: 40px;
     width: 95vw;
@@ -62,4 +62,4 @@ button {
     padding: 4em;
     margin-bottom: 4em;
   }
-}
+} */

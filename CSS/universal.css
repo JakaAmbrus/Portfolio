@@ -137,7 +137,7 @@ li {
     font-size: 6.5vw;
   }
 }
-@media (min-height: 2500px) and (orientation: portrait) {
+/* @media (min-height: 2500px) and (orientation: portrait) {
   #landing-page-container {
     flex-direction: column;
   }
@@ -170,7 +170,7 @@ li {
   #landing-page-navigation {
     font-size: 2em;
   }
-}
+} */
 
 @media (min-width: 2501px) {
   #landing-page-content-container {
